@@ -2,7 +2,6 @@
 
 Personal site — projects and profile.
 
-- **Live site:** [trey16885.github.io](https://trey16885.github.io)
 - **Repository:** [github.com/Trey16885/RaddyPlaza](https://github.com/Trey16885/RaddyPlaza)
 
 ## Running locally
