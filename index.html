@@ -1,10 +1,166 @@
-<!DOCTYPE=html>
-<!-- Background Music -->
-<audio src="backgroudmusic.mp3>
-<h1>RaddyPlaza</h1>
-<!-- Please make the style Red and Black -->
-<img src="MyAvatar.webp">
-<h1>Projects</h1>
-<a href="https://trey16885.github.io">Rhododendron Ai</a>
-<h2>About Me</h2>
-<p>I absolutely <strong>LOVE</strong> <em>Gold, Black, and Red</em>. I am a Software engineer, Game Dev, App Dev, and AI engineer.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RaddyPlaza</title>
+<meta name="description" content="RaddyPlaza — projects and profile of a software engineer, game developer, app developer, and AI engineer.">
+<link rel="icon" href="MyAvatar.webp" type="image/webp">
+<style>
+  :root {
+    --black: #0b0b0d;
+    --panel: #141418;
+    --red: #d62828;
+    --red-bright: #ff3b3b;
+    --gold: #e6b325;
+    --text: #f2f2f2;
+    --muted: #b6b6bd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    padding: 2rem 1.25rem 4rem;
+    background: var(--black);
+    background-image:
+      radial-gradient(circle at 15% 0%, rgba(214, 40, 40, 0.28), transparent 45%),
+      radial-gradient(circle at 85% 10%, rgba(230, 179, 37, 0.16), transparent 40%);
+    background-attachment: fixed;
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+  }
+
+  main {
+    max-width: 44rem;
+    margin: 0 auto;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+
+  .avatar {
+    width: 180px;
+    height: 180px;
+    max-width: 60vw;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--gold);
+    box-shadow: 0 0 0 6px rgba(214, 40, 40, 0.35);
+  }
+
+  h1 {
+    margin: 1.25rem 0 0.25rem;
+    font-size: clamp(2.25rem, 8vw, 3.5rem);
+    letter-spacing: -0.02em;
+    background: linear-gradient(100deg, var(--red-bright), var(--gold));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .tagline {
+    margin: 0;
+    color: var(--muted);
+    font-size: 1.05rem;
+  }
+
+  h2 {
+    margin: 2.5rem 0 0.75rem;
+    font-size: 1.5rem;
+    color: var(--gold);
+    border-bottom: 2px solid var(--red);
+    padding-bottom: 0.35rem;
+  }
+
+  ul.projects {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul.projects li + li { margin-top: 0.75rem; }
+
+  ul.projects a {
+    display: block;
+    padding: 0.9rem 1.1rem;
+    background: var(--panel);
+    border: 1px solid rgba(230, 179, 37, 0.25);
+    border-left: 4px solid var(--red);
+    border-radius: 8px;
+    color: var(--text);
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+  }
+
+  ul.projects a:hover,
+  ul.projects a:focus-visible {
+    background: #1c1c22;
+    border-color: var(--gold);
+    transform: translateX(4px);
+  }
+
+  strong { color: var(--red-bright); }
+  em { color: var(--gold); font-style: normal; font-weight: 600; }
+
+  a:focus-visible,
+  audio:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 3px;
+  }
+
+  .music {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .music p {
+    margin: 0 0 0.5rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  audio {
+    width: 100%;
+    max-width: 22rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img class="avatar" src="MyAvatar.webp" width="420" height="420"
+         alt="Portrait of the site owner" decoding="async" fetchpriority="high">
+    <h1>RaddyPlaza</h1>
+    <p class="tagline">Software Engineer &middot; Game Dev &middot; App Dev &middot; AI Engineer</p>
+  </header>
+
+  <section>
+    <h2>Projects</h2>
+    <ul class="projects">
+      <li><a href="https://trey16885.github.io" rel="noopener">Rhododendron AI</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>About Me</h2>
+    <p>I absolutely <strong>LOVE</strong> <em>Gold, Black, and Red</em>. I am a Software
+       Engineer, Game Dev, App Dev, and AI Engineer.</p>
+  </section>
+
+  <section class="music">
+    <p>Background music</p>
+    <audio src="backgroundmusic.mp3" controls preload="none" loop></audio>
+  </section>
+</main>
+</body>
+</html>
